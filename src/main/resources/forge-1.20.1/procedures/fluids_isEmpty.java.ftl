@@ -1,5 +1,3 @@
 (
-
-	${input$FluidStack}.isEmpty()
-
+	${input$fluidstack}.isEmpty()
 )

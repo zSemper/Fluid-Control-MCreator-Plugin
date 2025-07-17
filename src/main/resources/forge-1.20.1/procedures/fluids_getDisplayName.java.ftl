@@ -1,5 +1,3 @@
 (
-
-	${input$FluidStack}.getDisplayName().getString()
-
+	${input$fluidstack}.getDisplayName().getString()
 )

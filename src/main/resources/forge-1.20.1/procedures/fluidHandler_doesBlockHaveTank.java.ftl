@@ -1,5 +1,4 @@
 (
-
 	new Object() {
 		public boolean doesBlockHaveTank(LevelAccessor level, BlockPos pos) {
 			BlockEntity blockEntity = level.getBlockEntity(pos);
@@ -9,5 +8,4 @@
 			return false;
 		}
 	}.doesBlockHaveTank(world, BlockPos.containing(${input$x}, ${input$y}, ${input$z}))
-
 )

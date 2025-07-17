@@ -1,5 +1,3 @@
 (
-
-${input$FluidStack}.getFluid().getFluidType().getLightLevel()
-
+    ${input$fluidstack}.getFluid().getFluidType().getLightLevel()
 )

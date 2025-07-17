@@ -37,7 +37,7 @@ dependencies {
 }
 
 tasks.jar {
-    archiveFileName.set("fluid_control_2024.4_1.2.zip")
+    archiveFileName.set("fluid_control_2024.4_1.1.1.zip")
 
     from {
         configurations.export.collect { it.isDirectory() ? it : zipTree(it) }

@@ -1,5 +1,3 @@
 (
-
-${input$FluidStack}.getFluid().getFluidType().canPushEntity(${input$entity})
-
+    ${input$fluidstack}.getFluid().getFluidType().canPushEntity(${input$entity})
 )

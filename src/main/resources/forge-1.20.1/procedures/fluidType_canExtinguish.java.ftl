@@ -1,5 +1,3 @@
 (
-
-${input$FluidStack}.getFluid().getFluidType().canExtinguish(${input$entity})
-
+    ${input$fluidstack}.getFluid().getFluidType().canExtinguish(${input$entity})
 )

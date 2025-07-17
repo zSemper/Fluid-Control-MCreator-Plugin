@@ -1,5 +1,3 @@
 (
-
-${input$FluidStack}.getFluid().getFluidType().canSwim(${input$entity})
-
+    ${input$fluidstack}.getFluid().getFluidType().canSwim(${input$entity})
 )

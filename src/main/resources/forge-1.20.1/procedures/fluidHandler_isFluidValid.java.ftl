@@ -1,7 +1,6 @@
 (
-
 	new Object() {
-		public boolean getFluidInTank(LevelAccessor level, BlockPos pos, FluidStack stack) {
+		public boolean isFluidValid(LevelAccessor level, BlockPos pos, FluidStack stack) {
 			BlockEntity blockEntity = level.getBlockEntity(pos);
 			if(blockEntity != null) {
 				return blockEntity.getCapability(ForgeCapabilities.FLUID_HANDLER, null)
@@ -10,6 +9,5 @@
 			}
 			return false;
 		}
-	}.getFluidInTank(world, BlockPos.containing(${input$x}, ${input$y}, ${input$z}), ${input$FluidStack})
-
+	}.isFluidValid(world, BlockPos.containing(${input$x}, ${input$y}, ${input$z}), ${input$fluidstack})
 )

@@ -1,5 +1,4 @@
 (
-
 	new Object() {
 		public FluidStack getFluidInTank(LevelAccessor level, BlockPos pos) {
 			BlockEntity blockEntity = level.getBlockEntity(pos);
@@ -11,5 +10,4 @@
 			return FluidStack.EMPTY;
 		}
 	}.getFluidInTank(world, BlockPos.containing(${input$x}, ${input$y}, ${input$z}))
-
 )

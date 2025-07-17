@@ -1,5 +1,3 @@
 (
-
-${input$FluidStack}.getFluid().getFluidType().getTemperature()
-
+    ${input$fluidstack}.getFluid().getFluidType().getTemperature()
 )

@@ -1,5 +1,3 @@
 {
-
-	${input$FluidStack}.grow((int) ${input$Amount});
-
+	${input$fluidstack}.grow((int) ${input$amount});
 }

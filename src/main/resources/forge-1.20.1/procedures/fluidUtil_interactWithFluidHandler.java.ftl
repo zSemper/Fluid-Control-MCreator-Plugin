@@ -1,5 +1,4 @@
 (
-
 	new Object() {
 		public boolean interactFluidHandler(LevelAccessor level, Entity entity, BlockPos pos, InteractionHand hand) {
 			if(entity instanceof Player player) {
@@ -13,5 +12,4 @@
 			return false;
 		}
 	}.interactFluidHandler(world, ${input$entity}, BlockPos.containing(${input$x}, ${input$y}, ${input$z}), InteractionHand.${field$hand})
-
 )

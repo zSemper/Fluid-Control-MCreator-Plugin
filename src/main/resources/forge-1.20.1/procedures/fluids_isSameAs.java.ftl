@@ -1,5 +1,3 @@
 (
-
-	${input$FluidStack1}.isFluidEqual(${input$FluidStack2})
-
+	${input$fluidstack1}.isFluidEqual(${input$fluidstack2})
 )

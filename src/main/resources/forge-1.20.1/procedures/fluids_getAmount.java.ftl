@@ -1,5 +1,3 @@
 (
-
-	${input$FluidStack}.getAmount()
-
+	${input$fluidstack}.getAmount()
 )
