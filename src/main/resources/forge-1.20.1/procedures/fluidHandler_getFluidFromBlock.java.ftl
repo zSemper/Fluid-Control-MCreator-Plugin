@@ -4,7 +4,7 @@
 			BlockEntity blockEntity = level.getBlockEntity(pos);
 			if(blockEntity != null) {
 				return blockEntity.getCapability(ForgeCapabilities.FLUID_HANDLER, null)
-					.map(fluidHandler -> fluidHandler.getFluidInTank(0))
+					.map(fluidHandler -> fluidHandler.getFluidInTank(0).copy())
 					.orElse(FluidStack.EMPTY);
 			}
 			return FluidStack.EMPTY;
