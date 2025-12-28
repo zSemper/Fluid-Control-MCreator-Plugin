@@ -10,7 +10,8 @@
   "output": "FluidStack",
   "colour": "#00c8d5",
   "mcreator": {
-    "toolbox_id": "fluids",
+    "group": 00,
+    "toolbox_id": "mcelements",
     "fields": [
       "fluid"
     ]

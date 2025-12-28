@@ -1,3 +1,1 @@
-(
-	BuiltInRegistries.FLUID.getKey(${input$fluidstack}.getFluid()).toString()
-)
+BuiltInRegistries.FLUID.getKey(${input$fluidstack}.getFluid()).toString()

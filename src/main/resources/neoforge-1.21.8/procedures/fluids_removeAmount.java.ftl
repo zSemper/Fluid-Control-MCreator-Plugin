@@ -1,3 +1,1 @@
-{
-	${input$fluidstack}.shrink((int) ${input$amount});
-}
+${input$fluidstack}.shrink((int) ${input$amount});

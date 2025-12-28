@@ -1,3 +1,1 @@
-(
-	new FluidStack(${input$fluidstack}.getFluid(), ${input$amount})
-)
+new FluidStack(${input$fluidstack}.getFluid(), (int) ${input$amount})

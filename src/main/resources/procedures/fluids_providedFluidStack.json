@@ -1,0 +1,13 @@
+{
+  "output": "FluidStack",
+  "colour": "#00c8d5",
+  "mcreator": {
+    "toolbox_id": "mcelements",
+    "dependencies": [
+      {
+        "name": "fluidstack",
+        "type": "fluidstack"
+      }
+    ]
+  }
+}

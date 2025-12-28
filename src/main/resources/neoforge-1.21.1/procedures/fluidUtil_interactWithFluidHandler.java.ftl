@@ -1,12 +1,12 @@
+<@addTemplate file="static/getIFluidHandler.java.ftl" />
+
 (
 	new Object() {
-		public boolean interactFluidHandler(LevelAccessor level, Entity entity, BlockPos pos, InteractionHand hand) {
+		boolean interactFluidHandler(LevelAccessor level, Entity entity, BlockPos pos, InteractionHand hand) {
 			if(entity instanceof Player player) {
-				if(level instanceof ILevelExtension extension) {
-					IFluidHandler fluidHandler = extension.getCapability(Capabilities.FluidHandler.BLOCK, pos, null);
-					return FluidUtil.interactWithFluidHandler(player, hand, fluidHandler);
-				}
-				return false;
+			    return Optional.ofNullable(getIFluidHandler(level, pos))
+			                   .map(f -> FluidUtil.interactWithFluidHandler(player, hand, f))
+			                   .orElse(false);
 			}
 			return false;
 		}

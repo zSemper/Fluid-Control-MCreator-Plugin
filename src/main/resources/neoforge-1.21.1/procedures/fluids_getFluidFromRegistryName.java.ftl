@@ -1,3 +1,1 @@
-(
-	new FluidStack(BuiltInRegistries.FLUID.get(ResourceLocation.parse(${input$regName})), 1)
-)
+new FluidStack(BuiltInRegistries.FLUID.get(ResourceLocation.parse(${input$regName})), 1)

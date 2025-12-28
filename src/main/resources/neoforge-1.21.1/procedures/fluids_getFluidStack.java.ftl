@@ -1,3 +1,1 @@
-(
-	new FluidStack(${generator.map(field$fluid, "fluids")}, 1)
-)
+new FluidStack(${generator.map(field$fluid, "fluids")}, 1)

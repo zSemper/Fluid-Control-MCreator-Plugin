@@ -1,3 +1,1 @@
-(
-    ${input$fluidstack}.getFluidType().canConvertToSource(${input$fluidstack})
-)
+${input$fluidstack}.getFluidType().canConvertToSource(${input$fluidstack})

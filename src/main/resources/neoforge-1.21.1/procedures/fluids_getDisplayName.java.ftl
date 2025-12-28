@@ -1,3 +1,1 @@
-(
-	${input$fluidstack}.getHoverName().getString()
-)
+${input$fluidstack}.getHoverName().getString()

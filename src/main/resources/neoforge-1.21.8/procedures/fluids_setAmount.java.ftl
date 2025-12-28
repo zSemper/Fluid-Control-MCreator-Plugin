@@ -1,3 +1,1 @@
-{
-	${input$fluidstack}.setAmount((int) ${input$amount});
-}
+${input$fluidstack}.setAmount((int) ${input$amount});

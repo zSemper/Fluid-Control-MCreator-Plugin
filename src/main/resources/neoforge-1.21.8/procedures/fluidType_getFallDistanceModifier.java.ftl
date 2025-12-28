@@ -1,3 +1,1 @@
-(
-    ${input$fluidstack}.getFluidType().getFallDistanceModifier(${input$entity})
-)
+${input$fluidstack}.getFluidType().getFallDistanceModifier(${input$entity})

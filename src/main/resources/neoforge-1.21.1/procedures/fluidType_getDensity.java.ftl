@@ -1,3 +1,1 @@
-(
-    ${input$fluidstack}.getFluidType().getDensity()
-)
+${input$fluidstack}.getFluidType().getDensity()

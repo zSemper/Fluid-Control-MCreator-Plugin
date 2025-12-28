@@ -1,3 +1,1 @@
-(
-    ${input$fluidstack}.getFluidType().motionScale(${input$entity})
-)
+${input$fluidstack}.getFluidType().motionScale(${input$entity})

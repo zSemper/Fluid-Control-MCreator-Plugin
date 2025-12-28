@@ -1,3 +1,1 @@
-(
-    ${input$fluidstack}.getFluidType().getViscosity()
-)
+${input$fluidstack}.getFluidType().getViscosity()

@@ -1,3 +1,1 @@
-(
-	FluidStack.EMPTY
-)
+FluidStack.EMPTY

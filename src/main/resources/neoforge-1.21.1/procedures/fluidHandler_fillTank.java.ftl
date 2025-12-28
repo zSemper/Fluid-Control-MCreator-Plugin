@@ -1,8 +1,6 @@
-{
-	if(world instanceof ILevelExtension extension) {
-		IFluidHandler fluidHandler = extension.getCapability(Capabilities.FluidHandler.BLOCK, BlockPos.containing(${input$x}, ${input$y}, ${input$z}), null);
-		if(fluidHandler != null) {
-			fluidHandler.fill(new FluidStack(${input$fluidstack}.getFluid(), (int) ${input$amount}), IFluidHandler.FluidAction.EXECUTE);
-		}
-	}
-}
+<@addTemplate file="static/getIFluidHandler.java.ftl" />
+
+final Fluid _fluid${cbi} = ${input$fluidstack}.getFluid();
+final int _amount${cbi} = (int) ${input$amount};
+Optional.ofNullable(getIFluidHandler(world, BlockPos.containing(${input$x}, ${input$y}, ${input$z})))
+        .ifPresent(f -> f.fill(new FluidStack(_fluid${cbi}, _amount${cbi}), IFluidHandler.FluidAction.EXECUTE));

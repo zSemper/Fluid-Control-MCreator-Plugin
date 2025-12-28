@@ -1,3 +1,1 @@
-(
-    ${input$fluidstack}.getFluidType().canHydrate(${input$entity})
-)
+${input$fluidstack}.getFluidType().canHydrate(${input$entity})

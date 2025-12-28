@@ -1,3 +1,1 @@
-(
-	${input$fluidstack}.getFluid().getBucket()
-)
+${input$fluidstack}.getFluid().getBucket()

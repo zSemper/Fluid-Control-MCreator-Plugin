@@ -1,13 +1,9 @@
-(
-	new Object() {
-		public boolean isFluidValid(LevelAccessor level, BlockPos pos, FluidStack stack) {
-			if(level instanceof ILevelExtension extension) {
-				IFluidHandler fluidHandler = extension.getCapability(Capabilities.FluidHandler.BLOCK, pos, null);
-				if(fluidHandler != null) {
-					return fluidHandler.isFluidValid(0, stack);
-				}
-			}
-			return false;
-		}
-	}.isFluidValid(world, BlockPos.containing(${input$x}, ${input$y}, ${input$z}), ${input$fluidstack})
-)
+<@addTemplate file="static/getIFluidHandler.java.ftl" />
+
+new Object() {
+    boolean isFluidValid(final int tank, final FluidStack fluid, final BlockPos pos) {
+        return Optional.ofNullable(getIFluidHandler(world, pos))
+                       .map(f -> f.isFluidValid(tank, fluid))
+                       .orElse(false);
+    }
+}.isFluidValid((int) ${input$tank}, ${input$fluidstack}, BlockPos.containing(${input$x}, ${input$y}, ${input$z}))
